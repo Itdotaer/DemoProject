@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body data-ng-controller="AppCtrl">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>{{appName}}</p>
+    <%=staticVER%>
+    <script type="text/javascript" src="/app/vender/requirejs/require.js?<%=staticVER%>"></script>
+    <script type="text/javascript" src="/app/scripts/require.config.js?<%=staticVER%>"></script>
+    <script type="text/javascript">
+    	require(['scripts/app'], function(){
+
+    	});
+    </script>
+  </body>
+</html>

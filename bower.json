@@ -1,0 +1,23 @@
+{
+  "name": "Demo Project",
+  "version": "0.0.0",
+  "authors": [
+    "itdotaer <hujiangtao1235@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/app/scripts/vender",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "requirejs": "~2.1.17",
+    "angular-bootstrap": "~0.13.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}
