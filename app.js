@@ -22,13 +22,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+//获取设置的版本号，用于刷新页面的js版本
 app.use(function(req, res, next) {
   res.locals.staticVER = webConfig.STATIC_VER;
-  console.log("============>");
   next();
 });
 
-
+//主页面相关的route
 app.use('/', routes);
 
 // catch 404 and forward to error handler

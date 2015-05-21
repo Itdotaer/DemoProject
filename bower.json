@@ -18,6 +18,9 @@
     "bootstrap": "~3.3.4",
     "requirejs": "~2.1.17",
     "angular-bootstrap": "~0.13.0",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "font-awesome": "~4.3.0",
+    "requirejs-text": "~2.0.14",
+    "lodash": "~3.9.0"
   }
 }
