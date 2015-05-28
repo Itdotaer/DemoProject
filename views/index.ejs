@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="/javascripts/vender/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/javascripts/vender/font-awesome/css/font-awesome.css">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/javascripts/vender/bootstrap/dist/css/bootstrap.min.css?ver=<%=staticVER%>">
+        <link rel="stylesheet" type="text/css" href="/javascripts/vender/font-awesome/css/font-awesome.css?ver=<%=staticVER%>">
+    <link rel='stylesheet' href='/stylesheets/style.css?ver=<%=staticVER%>' />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,9 +22,12 @@
     <div class="container" ui-view></div>
     <footer footer="footer"></footer>
 
-    <script type="text/javascript" src="/javascripts/vender/requirejs/require.js?<%=staticVER%>"></script>
-    <script type="text/javascript" src="/javascripts/require.config.js?<%=staticVER%>"></script>
+    <script type="text/javascript" src="/dev-javascripts/vender/requirejs/require.js?ver=<%=staticVER%>"></script>
+    <script type="text/javascript" src="/javascripts/require.config.js?ver=<%=staticVER%>"></script>
     <script type="text/javascript">
+      require.config({
+        urlArgs: "ver=" +  <%= staticVER %>
+      });
     	require(['app'], function(){
 
     	});

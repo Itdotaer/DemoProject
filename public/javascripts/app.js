@@ -1,3 +1,5 @@
+/*Some thing*/
+
 define(['angular', 'angular-ui-router', 'jquery', 'angular-bootstrap'], function () {
     var app = angular.module("app", ['ui.router']);
 
