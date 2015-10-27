@@ -1,5 +1,5 @@
-﻿(function () {
-    'use strict';
+define(['toastr'], function(toastr){
+	'use strict';
 
     angular
         .module('services')
@@ -62,4 +62,4 @@
             toastr[type](msg);
         };
     }
-})();
+});

@@ -11,7 +11,8 @@ require.config({
     'jquery': 'vender/jquery/dist/jquery',
     'bootstrap': 'vender/bootstrap/dist/js/bootstrap',
     'text' : 'vender/requirejs-text/text',
-    'lodash': 'vender/lodash/lodash.min'
+    'lodash': 'vender/lodash/lodash.min',
+    'toastr': 'vender/toastr/toastr.min'
   },
 
   // Add angular modules that does not support AMD out of the box, put it in a shim

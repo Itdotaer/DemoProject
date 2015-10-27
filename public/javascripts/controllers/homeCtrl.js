@@ -4,9 +4,11 @@ define(['app'], function(app){
 	app.controller('HomeCtrl', HomeCtrl);
 
 	//Inject
-	HomeCtrl.$inject = ['$scope'];
+	HomeCtrl.$inject = ['$scope', 'logger'];
 
-	function HomeCtrl($scope){
+	function HomeCtrl($scope, logger){
 		$scope.message = 'shit';
+
+		logger.logInfo('Hello world.')
 	}
 });

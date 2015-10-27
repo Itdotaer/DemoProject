@@ -1,1 +1,4 @@
-define([], function(){});
+define([
+    'services/servicesModule',
+    'services/logger'
+], function(){});

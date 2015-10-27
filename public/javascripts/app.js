@@ -1,7 +1,5 @@
-/*Some thing*/
-
 define(['angular', 'angular-ui-router', 'jquery', 'angular-bootstrap'], function () {
-    var app = angular.module("app", ['ui.router']);
+    var app = angular.module("app", ['ui.router', 'services']);
 
     app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider
