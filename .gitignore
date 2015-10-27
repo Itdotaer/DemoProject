@@ -1,2 +1,3 @@
 node_modules
-public/javascripts/*
+public/javascripts
+public/dev-javascripts/vendor
